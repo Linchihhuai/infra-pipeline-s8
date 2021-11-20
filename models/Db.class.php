@@ -10,8 +10,8 @@ class Db
             // $this->_db = new PDO('mysql:host=localhost;dbname=bdbn;charset=utf8', 'root', '');
             // $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-            $db = parse_url(getenv("postgres://rtmhswkqzudkyy:ca9e5a997be515c91c5c40260f98a8b2fca67e6b3c0338dd547a4f96e30cfe1f@ec2-54-228-139-34.eu-west-1.compute.amazonaws.com:5432/d6tfqmsrcf8kk3"));
-			$db["d6tfqmsrcf8kk3"] = ltrim($db["d6tfqmsrcf8kk3"], "/");
+            $this ->_db = parse_url(getenv("postgres://rtmhswkqzudkyy:ca9e5a997be515c91c5c40260f98a8b2fca67e6b3c0338dd547a4f96e30cfe1f@ec2-54-228-139-34.eu-west-1.compute.amazonaws.com:5432/d6tfqmsrcf8kk3"));
+			$this->_db["d6tfqmsrcf8kk3"] = ltrim$_db["d6tfqmsrcf8kk3"], "/");
         } 
 		catch (PDOException $e) {
 		    die('Erreur de connexion à la base de données : '.$e->getMessage());
