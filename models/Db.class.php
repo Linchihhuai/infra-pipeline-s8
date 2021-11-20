@@ -10,7 +10,7 @@ class Db
             // $this->_db = new PDO('mysql:host=localhost;dbname=bdbn;charset=utf8', 'root', '');
             // $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-            $this->_db = new PDO( "dbname=d6tfqmsrcf8kk3 host=ec2-54-228-139-34.eu-west-1.compute.amazonaws.com port=5432 user=rtmhswkqzudkyy password=ca9e5a997be515c91c5c40260f98a8b2fca67e6b3c0338dd547a4f96e30cfe1f sslmode=require");
+            $this->_db = new PDO( "mysql:dbname=d6tfqmsrcf8kk3 host=ec2-54-228-139-34.eu-west-1.compute.amazonaws.com port=5432 user=rtmhswkqzudkyy password=ca9e5a997be515c91c5c40260f98a8b2fca67e6b3c0338dd547a4f96e30cfe1f sslmode=require");
             $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
         } 
