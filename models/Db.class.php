@@ -8,9 +8,10 @@ class Db
     {
         try {
            
-
+        	//contains information of the database
          	$db = parse_url(getenv("DATABASE_URL"));
 
+         	//creates connection using the information in $db
 			 $this->_db  = new PDO("pgsql:" . sprintf(
 			    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
 			    $db["host"],
